@@ -1,0 +1,79 @@
+/*common.css*/
+
+/* font */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+#wrap{font-family: "Noto Sans KR", sans-serif;}
+
+html, body{width:100%; height:100%; font-family:'Nanum Gothic', sans-serif;}
+  html, body, h1, h2, h3, h4, h5, h6, p, div, pre,
+  ul, ol, li, dl, dt, dd, img, figure,figcaption, hr, 
+  header, article, section, nav, footer, aside, main{margin:0; padding:0; border:0; outline:0;}
+
+  ul, ol, li{list-style: none;}
+  
+  a {text-decoration:none; color:inherit;}
+
+  a{display:block; width:100%; height:100%;}
+
+  a > span{
+    font-size:1rem;
+    line-height: 40px;}
+
+  button{
+    border:0; cursor:pointer; 
+  }
+
+  address{font-style: normal;}
+  abbr{text-decoration: none;}
+
+  hr{border-bottom:1px solid #333;}
+
+  table, thead, tbody, tfoot, tr, th, td{border:1px solid #333; border-spacing:0; border-collapse: collapse;}
+
+  form, fieldset, legend{margin:0; padding: 0; border:0; outline: 0;}
+  legend {position: absolute; z-index:-1; width:0; height:0; overflow:hidden;}
+
+  input[type="text"], 
+  input[type="password"], 
+  input[type="url"],
+  input[type="email"],
+  input[type="number"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="dateline"],
+  input[type="week"],
+  input[type="month"] {border:1px solid #ccc; 
+                       box-sizing: border-box; 
+                       text-indent: 0.5rem; 
+                       margin:0; padding:0;}
+
+  textarea{margin:0; padding: 0.5rem; box-sizing: border-box;
+           border:1px solid #777;}
+
+.hidden_wrap a>span, .hidden_wrap button>span,
+.hidden {display: block; position:absolute; z-index: -1; 
+         width:0; height: 0; overflow:hidden; border:0; margin: 0; padding: 0;}
+
+.clearfix:after, .clearfix::after {content:" "; display: block; clear:both;}
+.clearfix > li:first-child,
+.clearfix > div:first-child{margin-left:0;}
+
+.full a {display:block; width:100%; height: 100%;
+         background-repeat: no-repeat; background-position: 0 0;}
+
+.full a>span {display:block; position: absolute; z-index:0; 
+              width:0; height: 0; overflow: hidden;}
+
+
+
+/* table ======================================= */
+.table_style thead {background-color: #acf;}
+.table_style tfoot {background-color: #ccc;}
+.table_style table {border-left:0; border-right:0;}
+
+.table_style tr>th:first-child,
+.table_style tr>td:first-child{border-left:0;}
+
+.table_style tr>th:last-child,
+.table_style tr>td:last-child{border-right:0;}
